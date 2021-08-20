@@ -1,190 +1,194 @@
 <!DOCTYPE html>
-<html lang= "EN">
+<html lang="en">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Workorder</title>
+  <style>
+    .setup {
+      float: right;
+      width: 100%;
+    }
+  </style>
+</head>
 
-    <div>
+<body>
+  <div>
+    <table class="table table-bordered" style="width:100%; margin-bottom: 20px; border:1px;">
 
-      <table class="table table-bordered" style="width:100%; margin-bottom: 20px; border:1px;">
-<style>
-.setup { float: right; width: 100%; ; }
+      <tr>
+        <th colspan="8">Workorder</th>
+        <td>#62871A</td>
 
-</style>
+      </tr>
+      <tr>
+        <th colspan="1">Customer Name:</th>
+        <th colspan="4"> KRISTAL GRAPHICS</th>
+        <th rowspan="1">Printed</th>
+        <th>REP-BM</th>
+        <th>Ship Date:</th>
+        <td>04/08/21</td>
+      </tr>
+      <tr>
+        <th colspan="1">ITEM:</th>
+        <td colspan="2">Table Throw </td>
+        <td colspan="2"></td>
+        <td colspan="1" rowspan="4"></td>
+        <td colspan="1"></td>
+        <th colspan="1">In Hand Date</th>
+        <td>04/08/21</td>
+      </tr>
+      <tr>
+        <th colspan="1">QTY:</th>
+        <td colspan="1">2 </td>
+        <td colspan="1"> </td>
+        <td colspan="1"> </td>
+        <td colspan="1"> </td>
+        <th colspan="1"> Payment </th>
+        <td colspan="2">
+          <input type="checkbox" class=" "><label> PRE</label> &nbsp;
+          <input type="checkbox" class=" "><label> 50/50</label> &nbsp;
+          <input type="checkbox" class=" "><label>Terms</label> &nbsp;
+        </td>
+      </tr>
+      <tr>
+        <th colspan="1">Size:</th>
+        <td colspan="2">8"</td>
+        <td colspan="1">Single</td>
+        <td colspan="1">Double</td>
+        <th colspan="1"> Ship: </th>
+        <td colspan="2">
+          <input type="checkbox" class=" "><label> Blinds</label> &nbsp;
+          <input type="checkbox" class=" "><label>Rush</label> &nbsp;
+          <input type="checkbox" class=" "><label>Ground</label> &nbsp;
+        </td>
+      </tr>
+      <tr>
+        <th colspan="1">Material:</th>
+        <td colspan="2">Display</td>
+        <td colspan="1"> </td>
+        <td colspan="1"> </td>
+        <td colspan="1"> </td>
+        <td colspan="2">
+          <input type="checkbox" class=" "><label>2 Days</label> &nbsp;
+          <input type="checkbox" class=" "><label>Nextday</label> &nbsp;
+          <input type="checkbox" class=" "><label>Pick Up</label> &nbsp;
+        </td>
+      </tr>
 
-        <tr>
-<th colspan="8">Workorder</th>
-<td>#62871A</td>
-
-        </tr>
-        <tr>
-          <th colspan="1">Customer Name:</th>
-          <th colspan="4"> KRISTAL GRAPHICS</th>
-          <th rowspan="1">Printed</th>
-          <th>REP-BM</th>
-          <th>Ship Date:</th>
-          <td>04/08/21</td>
-        </tr>
-        <tr>
-          <th colspan="1" >ITEM:</th>
-          <td colspan= "2">Table Throw </td> 
-          <td colspan= "2"></td> 
-          <td colspan= "1" rowspan="4"></td> 
-          <td colspan= "1"></td> 
-          <th colspan= "1">In Hand Date</th> 
-          <td>04/08/21</td>
-        </tr>
-        <tr>
-            <th colspan="1">QTY:</th>
-            <td colspan= "1">2 </td> 
-            <td colspan= "1"> </td> 
-            <td colspan= "1"> </td> 
-            <td colspan= "1"> </td> 
-            <th colspan= "1"> Payment </th> 
-            <td colspan= "2">
-                <input type= "checkbox" class= " " ><label> PRE</label> &nbsp;
-                <input type= "checkbox" class= " " ><label> 50/50</label> &nbsp;
-                <input type= "checkbox" class= " " ><label>Terms</label> &nbsp; 
-             </td> 
-        </tr>
-        <tr>
-            <th colspan="1">Size:</th>
-            <td colspan="2">8"</td>
-            <td colspan="1">Single</td>
-            <td colspan="1">Double</td>
-            <th colspan= "1"> Ship: </th> 
-            <td colspan= "2"> 
-                <input type= "checkbox" class= " " ><label> Blinds</label> &nbsp;
-                <input type= "checkbox" class= " " ><label>Rush</label> &nbsp;
-                <input type= "checkbox" class= " " ><label>Ground</label> &nbsp;    
-            </td> 
-        </tr>
-        <tr>
-            <th colspan="1">Material:</th>
-            <td colspan="2">Display</td>
-            <td colspan= "1"> </td> 
-            <td colspan= "1"> </td>
-            <td colspan= "1"> </td> 
-            <td colspan= "2"> 
-                <input type= "checkbox" class= " " ><label>2 Days</label> &nbsp;
-                <input type= "checkbox" class= " " ><label>Nextday</label> &nbsp;
-                <input type= "checkbox" class= " " ><label>Pick Up</label> &nbsp;  
-             </td> 
-        </tr> 
-        
-          <!-- << SET UP PART    -->
-       <div class= "setup">
+      <!-- << SET UP PART    -->
+      <div class="setup">
 
         <tr>
           <th colspan="3">SET UP</th>
-          
-          </tr>
 
-          <tr>
-            <th colspan="1">NEW ORDER</th>
-            <th colspan="2">RE ORDER</th>
-            
-            </tr>
+        </tr>
 
-            <tr>
-              <th colspan="1">Colors</th>
-              <th colspan="2">CMYK</th>
-              
-              </tr>
+        <tr>
+          <th colspan="1">NEW ORDER</th>
+          <th colspan="2">RE ORDER</th>
 
-              <tr>
-                <td colspan="1">PMS</td>
-                <td colspan="2"></td>
-                </tr>
-                <tr>
-                  <td colspan="1">PMS</td>
-                  <td colspan="2"></td>
-                  </tr>
-                  <tr>
-                    <td colspan="1">PMS</td>
-                    <td colspan="2"></td>
-                    </tr>
+        </tr>
 
-                    <tr>
-                      <th colspan="1">LOGO COLOR</th>
-                      <td colspan="1">1</td>
-                      <td colspan="1"></td>
-                      </tr>
-                      <tr>
-                        <th colspan="1"></th>
-                        <td colspan="1">2</td>
-                        <td colspan="1"></td>
-                        </tr>
-                        <tr>
-                          <th colspan="1"></th>
-                          <td colspan="1">3</td>
-                          <td colspan="1"></td>
-                          </tr>
-                          <tr>
-                            <th colspan="1"></th>
-                            <td colspan="1">4</td>
-                            <td colspan="1"></td>
-                            </tr>
-                            <tr>
-                              <th colspan="1"></th>
-                              <td colspan="1">5</td>
-                              <td colspan="1"></td>
-                              </tr>
-                              <tr>
-                                <td colspan="3">Art Notes (pixeled art ok, color must matchs)</td>
-                                </tr>
-                                <tr>
-                                  <td colspan="3"></td>
-                                  </tr>
-                                  <tr>
-                                    <td colspan="1">STRIKE OF NEEDED</td>
-                                    <td colspan="2">NO</td>
-                                    </tr> 
-       </div>
+        <tr>
+          <th colspan="1">Colors</th>
+          <th colspan="2">CMYK</th>
+
+        </tr>
+
+        <tr>
+          <td colspan="1">PMS</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="1">PMS</td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="1">PMS</td>
+          <td colspan="2"></td>
+        </tr>
+
+        <tr>
+          <th colspan="1">LOGO COLOR</th>
+          <td colspan="1">1</td>
+          <td colspan="1"></td>
+        </tr>
+        <tr>
+          <th colspan="1"></th>
+          <td colspan="1">2</td>
+          <td colspan="1"></td>
+        </tr>
+        <tr>
+          <th colspan="1"></th>
+          <td colspan="1">3</td>
+          <td colspan="1"></td>
+        </tr>
+        <tr>
+          <th colspan="1"></th>
+          <td colspan="1">4</td>
+          <td colspan="1"></td>
+        </tr>
+        <tr>
+          <th colspan="1"></th>
+          <td colspan="1">5</td>
+          <td colspan="1"></td>
+        </tr>
+        <tr>
+          <td colspan="3">Art Notes (pixeled art ok, color must matchs)</td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+        </tr>
+        <tr>
+          <td colspan="1">STRIKE OF NEEDED</td>
+          <td colspan="2">NO</td>
+        </tr>
+      </div>
       <!-- << ACCESORIES UP PART    -->
-<div>
-  <tr>
-    <th colspan="3">ACCESORIES (w/product)</th>
-    </tr>
-    <tr>
-      <td colspan="1"></td>
-      <td colspan="2"></td>
-      </tr>
-      <tr>
-        <td colspan="1"></td>
-        <td colspan="2"></td>
-        </tr> <tr>
+      <div>
+        <tr>
+          <th colspan="3">ACCESORIES (w/product)</th>
+        </tr>
+        <tr>
           <td colspan="1"></td>
           <td colspan="2"></td>
-          </tr> <tr>
-            <td colspan="1"></td>
-            <td colspan="2"></td>
-            </tr> <tr>
-              <td colspan="1"></td>
-              <td colspan="2"></td>
-              </tr> <tr>
-                <td colspan="1"></td>
-                <td colspan="2"></td>
-                </tr> <tr>
-                  <th colspan="1">Machine</th>
-                  <th colspan="2">Profile</th>
-                  </tr> <tr>
-                    <td colspan="1"></td>
-                    <td colspan="2"></td>
-                    </tr>
+        </tr>
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="2"></td>
+        </tr>
+        <tr>
+          <th colspan="1">Machine</th>
+          <th colspan="2">Profile</th>
+        </tr>
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="2"></td>
+        </tr>
+      </div>
+    </table>
+  </div>
 
-
-
-
-
-
-</div>
-    </div>
-
-    
-
-      </table>
-
-
-    </div>
 </body>
+
 </html>
